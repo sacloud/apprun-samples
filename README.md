@@ -1,4 +1,4 @@
-# container-sample
+# apprun-samples
 
 さくらのクラウド AppRun 向けサンプルコンテナイメージのソースコードです。
 
