@@ -4,8 +4,8 @@
 
 ## 概要
 
-`tutorial/` に Node.js + Express の最小アプリケーションを含みます。
-`GET /` で `hello` を返し、`8080` ポートで待ち受けます。
+`tutorial/` に Node.js の最小アプリケーションを含みます。  
+`GET /` で `Hello from AppRun!` を返し、`8080` ポートで待ち受けます。
 
 - AppRun マニュアル: https://manual.sakura.ad.jp/cloud/apprun/getting_started.html
 
