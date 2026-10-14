@@ -14,12 +14,17 @@
  * limitations under the License.
  */
 
+const http = require('node:http');
 
-const express = require('express');
-const app = express();
-
-app.get('/', (req, res) => {
-  res.send('Hello from AppRun!');
+const app = http.createServer((req, res) => {
+  const path = req.url.split('?')[0];
+  if ((req.method === 'GET' || req.method === 'HEAD') && path === '/') {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('Hello from AppRun!\n');
+    return;
+  }
+  res.writeHead(404, { 'Content-Type': 'text/plain' });
+  res.end('Not Found\n');
 });
 
 app.listen(8080, () => {
